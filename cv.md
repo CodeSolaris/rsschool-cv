@@ -1,91 +1,104 @@
-# John Doe
-
-![Profile Picture](https://example.com/profile.jpg)
-
-<br>
+# Volkov Aleksandr
 
 ## Contact Information
 
-- Phone: +1 123 456 7890
-- Email: [john.doe@email.com](mailto:john.doe@email.com)
-- GitHub: [https://github.com/johndoe](https://github.com/johndoe)
-- Discord: johndoe#1234
+- Telegram: [@CodeSolaris](https://t.me/CodeSolaris)
+- Email: [volkov.aleksandr.it@gmail.com](mailto:volkov.aleksandr.it@gmail.com)
+- GitHub: [https://github.com/CodeSolaris](https://github.com/CodeSolaris)
+- Discord: [code_solaris](https://discordapp.com/users/531421038261567488/)
 
-<br>
 
 ## About Me
 
 As a motivated and goal-oriented web developer, I am eager to immerse myself in front-end development work. I am seeking an opportunity to contribute to the creation of high-quality web applications and am also open to freelance projects.
 
-<br>
+
 
 ## Skills
 
-- **Languages**: HTML, CSS, JavaScript (ES6+), PHP
-- **Frameworks/Libraries**: React, Redux, React Router, Node.js, Express.js, Laravel, Vue.js
-- **CMS**: WordPress (themes, plugins, optimization)
+- **Languages**: HTML, CSS, JavaScript (ES6+)
+- **Frameworks/Libraries**: React, Redux, React Router
 - **Tools**: Git, GitHub, Figma, Adobe XD, Trello, JIRA
 - **Methodologies**: Agile, Scrum
 
-<br>
+## Code example
+
+```js
+function decodeMorse(morseCode){
+  const WORD_SEPARATOR = '   ';
+  const LETTER_SEPARATOR = ' ';
+  
+  let morseWords = morseCode.split(WORD_SEPARATOR);
+  let decodedMessage = morseWords.map(decodeWord).join(' ').trim();
+  
+  return decodedMessage;
+  
+  function decodeWord(word) {
+    let morseLetters = word.split(LETTER_SEPARATOR);
+    return morseLetters.map(decodeLetter).join('');
+  }
+  
+  function decodeLetter(letter) {
+    return MORSE_CODE[letter] || '';
+  }
+}
+```
 
 ## Projects
 
-### RS School CV ([GitHub](https://github.com/your-username/rsschool-cv))
+### RS School CV ([GitHub](https://github.com/codesolaris/rsschool-cv))
 A personal curriculum vitae project showcasing my skills and experience.
 
-<br>
 
 ## Work Experience
 
 **Freelance Web Developer** (2022 - Present)
 
-- Developed and enhanced websites using HTML, CSS, JavaScript, and WordPress
-- Integrated templates and plugins, optimized performance
-- Collaborated with clients, clarified requirements, and delivered projects on time
+- Improved and optimized website performance by implementing best practices in HTML, CSS, and JavaScript.
+- Streamlined integration of templates and plugins to enhance website functionality and user experience.
+- Strengthened collaboration with clients by actively seeking feedback and maintaining clear communication throughout the project lifecycle.
 
-<br>
 
-**Assembly Foreman** at Rotterdam Shipyard, Rotterdam, Netherlands (2015 - 2022)
 
+
+
+**Assembly Foreman** at Rotterdam Shipyard, Rotterdam, Netherlands, Bremerhaven Shipbuilding, Bremerhaven, Germany, and Amsterdam Marine Works, Amsterdam, Netherlands (2006 - 2022)
 - Managed a team responsible for assembling ship hulls
 - Organized work and ensured timely completion of projects
 - Trained personnel and maintained quality standards
-
-<br>
-
-**Ship Hull Assembler** at Bremerhaven Shipbuilding, Bremerhaven, Germany (2010 - 2015)
-
-- Assembled ship hull structures according to blueprints
-- Worked with various metals and alloys
+- Assembled ship hull structures according to blueprints  
 - Adhered to quality and safety standards
+- Demonstrated leadership and problem-solving abilities, resolving complex technical challenges during ship hull construction.
+- Collaborated with team members and other departments across different shipyards
 
-<br>
 
-**Ship Hull Assembler** at Amsterdam Marine Works, Amsterdam, Netherlands (2006 - 2010)
 
-- Performed assembly operations during ship hull construction
-- Utilized various tools and equipment
-- Collaborated with team members and other departments
-
-<br>
 
 ## Education
 
-- 2002 - 2006: Bachelor's Degree in Agronomy, Agricultural University
+- Bachelor's Degree in Mykolaiv National Agrarian University
 
-<br>
-
+## Courses and Certifications:
+- udemy: 
+  - The Complete 2023 Web Development Bootcamp
+  - The Complete Front-End Web Development Course
+- rs school:
+  - JavaScript/Front-end. Stage 0
+  - JavaScript/Front-end. Stage 1
+  
 ## Language Skills
-
 - English: Fluent (IELTS 7.5)
-- Dutch: Conversational
-- German: Basic
+- Russian: Native
+- Ukrainian: Native
 
-<br>
 
 ## Interests and Hobbies
 
-- Fishing
-- Hiking
-- Photography
+- Reading professional blogs and journals: I dedicate time to reading current materials on various aspects of IT to stay updated on the latest trends and developments in the industry.
+- Participating in online courses and webinars: I continuously expand my knowledge and skills by participating in online courses and webinars on various aspects of IT.
+- Regular exercise: Maintaining a healthy lifestyle helps me to balance work and personal life, as well as increases my productivity and focus.
+
+
+## Additional Information
+
+Due to recent events in a military conflict, I transitioned my career to web development, enhancing adaptability and resilience. My extensive experience in shipyards across various cities has provided valuable insights into teamwork, problem-solving, and attention to detail, which I bring to my work in web development. I am committed to continuous learning and staying up-to-date with the latest industry trends to deliver exceptional results.
