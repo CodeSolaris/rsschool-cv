@@ -97,8 +97,3 @@ A personal curriculum vitae project showcasing my skills and experience.
 - Reading professional blogs and journals: I dedicate time to reading current materials on various aspects of IT to stay updated on the latest trends and developments in the industry.
 - Participating in online courses and webinars: I continuously expand my knowledge and skills by participating in online courses and webinars on various aspects of IT.
 - Regular exercise: Maintaining a healthy lifestyle helps me to balance work and personal life, as well as increases my productivity and focus.
-
-
-## Additional Information
-
-Due to recent events in a military conflict, I transitioned my career to web development, enhancing adaptability and resilience. My extensive experience in shipyards across various cities has provided valuable insights into teamwork, problem-solving, and attention to detail, which I bring to my work in web development. I am committed to continuous learning and staying up-to-date with the latest industry trends to deliver exceptional results.
