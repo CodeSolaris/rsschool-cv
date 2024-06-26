@@ -1,1 +1,3 @@
-[rsschool-cv](https://codesolaris.github.io/rsschool-cv/cv)
+rsschool-cv
+
+https://codesolaris.github.io/rsschool-cv/
