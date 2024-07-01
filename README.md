@@ -1,3 +1,3 @@
 rsschool-cv
 
-https://codesolaris.github.io/rsschool-cv/
+https://codesolaris.github.io/rsschool-cv/cv
