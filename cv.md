@@ -27,17 +27,17 @@ As a motivated and goal-oriented web developer, I am eager to immerse myself in 
 function decodeMorse(morseCode){
   const WORD_SEPARATOR = '   ';
   const LETTER_SEPARATOR = ' ';
-  
+
   let morseWords = morseCode.split(WORD_SEPARATOR);
   let decodedMessage = morseWords.map(decodeWord).join(' ').trim();
-  
+
   return decodedMessage;
-  
+
   function decodeWord(word) {
     let morseLetters = word.split(LETTER_SEPARATOR);
     return morseLetters.map(decodeLetter).join('');
   }
-  
+
   function decodeLetter(letter) {
     return MORSE_CODE[letter] || '';
   }
@@ -66,7 +66,7 @@ A personal curriculum vitae project showcasing my skills and experience.
 - Managed a team responsible for assembling ship hulls
 - Organized work and ensured timely completion of projects
 - Trained personnel and maintained quality standards
-- Assembled ship hull structures according to blueprints  
+- Assembled ship hull structures according to blueprints
 - Adhered to quality and safety standards
 - Demonstrated leadership and problem-solving abilities, resolving complex technical challenges during ship hull construction.
 - Collaborated with team members and other departments across different shipyards
@@ -79,13 +79,13 @@ A personal curriculum vitae project showcasing my skills and experience.
 - Bachelor's Degree in Mykolaiv National Agrarian University
 
 ## Courses and Certifications:
-- udemy: 
+- udemy:
   - The Complete 2023 Web Development Bootcamp
   - The Complete Front-End Web Development Course
 - rs school:
   - JavaScript/Front-end. Stage 0
   - JavaScript/Front-end. Stage 1
-  
+
 ## Language Skills
 - English: Fluent (IELTS 7.5)
 - Russian: Native
