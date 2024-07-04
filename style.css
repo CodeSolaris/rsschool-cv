@@ -74,15 +74,14 @@ input[type="submit"] {
 html,
 body,
 .page {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
-body {
-    overflow: hidden;
-}
+
 
 .page {
     font-family: var(--font-main);
@@ -128,7 +127,6 @@ body {
     margin: 0 auto;
     padding: var(--container-padding);
     max-width: var(--container-width);
-    width: 100%;
 }
 
 
@@ -161,24 +159,6 @@ body {
     gap: 20px;
 }
 
-.navigation__toggle {
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 30px;
-    width: 30px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-left: auto;
-}
-
-.navigation__toggle-bar {
-    background-color: var(--text-main-color);
-    height: 3px;
-    width: 100%;
-    transition: all 0.3s ease-in-out;
-}
 
 
 .page__footer {
@@ -189,82 +169,20 @@ body {
 }
 
 
-@media screen and (max-width: 992px) {
-    .font-medium {
-        font-size: 28px;
-    }
-}
-
-@media (max-width: 768px) {
-    .page {
-        background: url(img/background/darkspace.png) center/cover no-repeat;
-    }
-
-    .header {
-        border: transparent;
-    }
-
-    .video-background {
-        display: none;
-    }
-
-    .navigation__toggle {
-        display: flex;
-        z-index: 10;
-    }
-
-    .navigation__menu {
-        display: none;
-        justify-content: flex-start;
-        gap: 30px;
-        flex-direction: column;
-        /* border: var(--main-color) solid 2px; */
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 280px;
-        height: 500px;
-        padding: 50px 0 0 80px;
-        border-radius: 0% 100% 0% 100% / 51% 0% 100% 49%;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
-
-    .navigation__menu.active {
-        display: flex;
-        animation: fadeIn 0.3s ease-in-out;
-    }
-
-    .menu__list {
-        flex-direction: column;
-    }
-
-    .social {
-        justify-content: start;
-    }
-
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-}
-.hero__container{
+.hero__container {
+    width: 100%;
     padding-top: 0;
 }
+
 .hero__content {
+    width: 100%;
+    padding: 20px;
     font-family: var(--font-accent);
     background: url(img/background/computer-graphy.jpg) center/cover no-repeat;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 80vh;
+    height: 600px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
     z-index: -10;
 }
 
@@ -276,33 +194,32 @@ body {
 .hero__title::before {
     content: "I am";
     position: absolute;
-    top: 200px;
-    left: 100px;
-    z-index: 100;
+    top: 150px;
+    left: 150px;
 
 }
 
 .hero__title::after {
     content: "Aleksandr Volkov";
     position: absolute;
-    bottom: 5px;
-    right: 20px;
-    top: 300px;
-    z-index: 100;
+    right: 150px;
+    top: 250px;
 }
+
 .hero__subtitle {
-    padding-top: 50px;
-    font-size: 2.5em;
+    margin-top: 200px;
     text-align: center;
     font-weight: 300;
 
 }
+
 .button {
-align-self: center;
+    align-self: center;
     padding: 10px 20px;
     border-radius: 10px;
     background-color: #1e1c1c1b;
 }
+
 .hero__button {
 
     color: #fff;
