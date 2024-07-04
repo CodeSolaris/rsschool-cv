@@ -6,9 +6,22 @@
     --container-width: 1260px;
     --container-padding: 30px;
     --text-main-color: #fff;
-    --main-color: #eff704;
+    --main-color: #570bada5;
     --font-main: 'DM Sans', sans-serif;
     --font-accent: 'Marcellus', serif;
+    --gradient-main: linear-gradient(45deg,
+    #F72585,
+    #B5179E,
+    #7209B7,
+    #560BAD,
+    #480CA8,
+    #3A0CA3,
+    #3F37C9,
+    #3F37C9,
+    #3F37C9,
+    #3F37C9);
+    --background-color: #0f1f39b6;
+    --color-active:#24daee;
 }
 
 * {
@@ -129,6 +142,68 @@ body,
     max-width: var(--container-width);
 }
 
+.border-effect {
+  position: relative;
+}
+
+.border-effect::before {
+    content: '';
+    background: var(--gradient-main);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 300%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.border-effect::after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+
+
+
+.border-effect:active {
+    color: #24daee;
+    border-bottom: #24daee 2px solid;
+}
+
+.border-effect:active:after {
+    background: transparent;
+}
+
+.border-effect:hover:before {
+    opacity: 1;
+}
+
+
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
 
 .header__navigation {
     display: flex;
@@ -148,8 +223,9 @@ body,
     gap: 20px;
 }
 
-.menu__link {
+.menu__link{
     color: var(--text-main-color);
+    border-bottom: var(--text-main-color) 2px solid;
 }
 
 .social {
@@ -159,7 +235,33 @@ body,
     gap: 20px;
 }
 
+.social__link {
+    display: inline-block;
+    transition: all 0.3s ease;
+}
 
+.social__link:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+
+}
+
+.social__link:active {
+    transform: scale(0.9);
+    filter: brightness(0.8);
+}
+
+.social__icon {
+    transition: all 0.3s ease;
+}
+
+.social__link:hover .social__icon {
+    transform: rotate(15deg);
+}
+
+.social__link:active .social__icon {
+    transform: rotate(-15deg);
+}
 
 .page__footer {
     margin-top: auto;
@@ -216,12 +318,13 @@ body,
 .button {
     align-self: center;
     padding: 10px 20px;
-    border-radius: 10px;
-    background-color: #1e1c1c1b;
+    border-radius: 15px;
+    /* background-color: #1e1c1c1b; */
 }
 
 .hero__button {
-
-    color: #fff;
+    background-color: var(--background-color);
+    border: var(--main-color) 2px solid;
+    z-index: 1;
 
 }
