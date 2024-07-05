@@ -6,7 +6,7 @@
     --container-width: 1260px;
     --container-padding: 30px;
     --text-main-color: #fff;
-    --main-color: #570bada5;
+    --main-color: #fff;
     --font-main: 'DM Sans', sans-serif;
     --font-accent: 'Marcellus', serif;
     --gradient-main: linear-gradient(45deg,
@@ -260,7 +260,7 @@ z-index: 1000;
 
 .menu__link {
     color: var(--text-main-color);
-    border-bottom: var(--text-main-color) 2px solid;
+    border-bottom: var(--main-color) 2px solid;
 }
 
 .social {
@@ -406,8 +406,10 @@ margin-bottom: 50px;
 }
 
 .skills__content {
+    background-color: var(--background-color);
     height: 100%;
     background: url("img/background/peakpx.jpg") center/cover no-repeat;
+    mix-blend-mode: hard-light;
 }
 .skills__gallery{
     padding-bottom: 50px;
@@ -475,7 +477,17 @@ margin-bottom: 50px;
     object-fit: cover;
 
 }
+.portfolio__button{
+    background-color: var(--background-color);
+    border: var(--main-color) 2px solid;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 40px;
 
+    z-index: 1;
+}
 .portfolio__item:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
@@ -504,7 +516,7 @@ margin-bottom: 50px;
     transform: translate(-50%, -50%);
     width: 30px;
     height: 30px;
-    background-color: #fff;
+
 }
 
 .page__add-info{
@@ -513,33 +525,71 @@ margin-bottom: 50px;
     margin-bottom: 100px;
 }
 .add-info__content {
-    background: url("img/background/hacker.jpg");
+    background-color: var(--background-color);
+    background: url("img/background/hacker.jpg") center/cover no-repeat;
     height: 100%;
+    mix-blend-mode:hard-light;
 }
 .add-info__wrapper{
     display: flex;
+    padding: 50px 20px 50px 20px;
 }
-.expirience {
+
+.experience {
     width: 50%;
     margin-right: auto;
-    padding: 20px;
+    padding: 30px;
+    border-right: var(--main-color) solid 2px;
+
+}
+.experience__item-title {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: var(--main-color) solid 2px;
+}
+.experience__item, .education__item {
+    padding-bottom: 20px;
+}
+.experience__details{
+    padding-left: 20px;
+}
+.experience__details li{
+    margin-bottom: 15px;
+    position: relative;
+}
+.experience__details li::before{
+    content:"";
+    position: absolute;
+    top: 8px;
+    left: -20px;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    background-color: var(--main-color);
+}
+
+.experience__title, .education__title {
+    text-align: center;
+    padding-bottom: 100px;
 }
 .education{
     width: 50%;
     margin-left: auto;
-    padding: 20px;
-}
-.add-info__wrapper {
-    padding: 50px;
-}
-.expirience__title, .education__title {
-    text-align: center;
-    padding-bottom: 100px;
+    padding: 30px;
 }
 
-.languages__title {
-    text-align: center;
-    padding-bottom: 40px;
+.education__item-title, .education__courses-title{
+    margin-bottom: 10px;
+}
+.education__degree{
+    padding-left: 20px;
+}
+.category__title {
+    margin-bottom: 8px;
+}
+.category__item{
+    padding-left: 20px;
+    padding-bottom: 10px;
 }
 
 .languages__description {
@@ -548,14 +598,17 @@ margin-bottom: 50px;
     align-items: center;
     margin-bottom: 50px;
 }
-
-.code-example__title {
+.add-info__languages {
+    margin-bottom: 100px;
+}
+.code-example__title, .languages__title {
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .code__task {
-    padding: 10px ;
+    text-align: center;
 }
 .page__footer {
     margin-top: auto;
@@ -567,7 +620,7 @@ margin-bottom: 50px;
     justify-content: space-between;
     align-items: center;
     padding: 30px 0;
-    border-top: 1px solid var(--text-main-color);
+    border-top: 1px solid var(--main-color);
     margin: 0 auto;
 
 }
@@ -580,5 +633,5 @@ margin-bottom: 50px;
 .rsscool-logo__image {
     max-height: 50px;
     padding: 10px;
-    background-color: var(--text-main-color)
+    background-color: var(--main-color)
 }
