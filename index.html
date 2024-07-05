@@ -1,12 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+ <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>cv</title>
+  <title>Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <h1 class="title">cv</h1>
+<body class="page">
+  <div class="video-background">
+    <video autoplay loop muted playsinline>
+      <source src="video/background_video_10s.webm" type="video/webm">
+      <source src="video/background_video_10s.mp4" type="video/mp4">
+    </video>
+  </div>
+  <header class="page__header header">
+    <div class="container">
+      <div class="header__navigation navigation">
+        <nav class="navigation__menu menu">
+          <ul class="menu__list ">
+            <li class="menu__item "><a class="menu__link font-medium border-effect" href="#">Home</a></li>
+            <li class="menu__item"><a class="menu__link font-medium border-effect" href="#about">About</a></li>
+            <li class="menu__item"><a class="menu__link font-medium border-effect" href="#skills">Skills</a></li>
+            <li class="menu__item"><a class="menu__link font-medium border-effect" href="#portfolio">Portfolio</a></li>
+            <li class="menu__item"><a class="menu__link font-medium border-effect" href="#experience">Experience</a>
+            </li>
+            <li class="menu__item"><a class="menu__link font-medium border-effect" href="#contact">Contact</a></li>
+          </ul>
+          <ul class="menu__social social">
+            <li class="social__item">
+              <a href="https://github.com/CodeSolaris" class="social__link" target="_blank" rel="noopener noreferrer">
+                <img src="img/social/github.png" width="24" alt="github" class="social__icon">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.linkedin.com/in/codesolaris/" class="social__link" target="_blank"
+                rel="noopener noreferrer">
+                <img src="img/social/linkedin.png" width="24" alt="linkedin" class="social__icon">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="mailto:volkov.aleksandr.it@gmail.com" class="social__link" target="_blank"
+                rel="noopener noreferrer">
+                <img src="img/social/gmail.png" width="24" alt="gmail" class="social__icon">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://t.me/CodeSolaris" class="social__link" target="_blank" rel="noopener noreferrer">
+                <img src="img/social/telegram.png" width="24" alt="telegram" class="social__icon">
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="page__main main">
+    <section class="hero page__hero">
+      <div class="container hero__container ">
+        <div class="hero__content">
+          <div class="hero__description">
+            <h1 class="hero__title  font-large">Hi, there!</h1>
+          </div>
+          <div class="hero__subtitle font-medium">
+            <h2>Front-end developer</h2>
+          </div>
+          <button class="hero__button button font-small border-effect">Contact me</button>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about page__about">
+      <div class="container">
+        <div class="about__content">
+          <h2 class="about__title font-large">About me </h2>
+
+          <div class="about__description font-small">
+            <p>I specialize in creating interactive websites that are both visually appealing
+              and highly functional. With a focus on
+              clean, efficient code, I ensure sites not only look good but perform exceptionally well. Let's build
+              something outstanding together!</p>
+          </div>
+          <img src="img/background/photo.png" alt="my photo" class="about__photo">
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="skills page__skills ">
+      <div class="container">
+        <div class="skills__content">
+          <div class="container">
+            <div class="skills__title font-large">
+              <h2>MY Skills:</h2>
+            </div>
+            <div class="skills__gallery gallery">
+              <img class="gallery__image" src="img/skills/css.jpg" alt="css">
+              <img class="gallery__image" src="img/skills/git.jpg" alt="git">
+              <img class="gallery__image" src="img/skills/github.png" alt="github">
+              <img class="gallery__image" src="img/skills/html.jpg" alt="html">
+              <img class="gallery__image" src="img/skills/react.png" alt="react">
+              <img class="gallery__image" src="img/skills/scss.jpg" alt="scss">
+              <img class="gallery__image" src="img/skills/typescrypt.jpg" alt="typescript">
+              <img class="gallery__image" src="img/skills/vitejs.webp" alt="vite">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio" class="portfolio page__porfolio">
+      <div class="container">
+        <div class="portfolio__content">
+          <h1 class="portfolio__title font-large">Portfolio</h1>
+          <div class="portfolio__description font-medium">
+            <p>Here are some of my projects:</p>
+          </div>
+          <div class="portfolio__gallery">
+            <div class="portfolio__item">
+              <img src="img/example/example1.jpg" alt="example1" class="portfolio__work">
+              <div class="portfolio__overlay">
+                <p>Discover the story behind each line of code. <br>Visit GitHub for the complete experience.</p>
+                <a href="https://github.com/CodeSolaris" class="portfolio__github-link border-effect" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+            <div class="portfolio__item">
+              <img src="img/example/example2.jpg" alt="example2" class="portfolio__work">
+              <div class="portfolio__overlay">
+                <p>Discover the story behind each line of code.<br> Visit GitHub for the complete experience.</p>
+                <a href="https://github.com/CodeSolaris" class="portfolio__github-link border-effect" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+            <div class="portfolio__item">
+              <img src="img/example/example3.jpg" alt="example3" class="portfolio__work">
+              <div class="portfolio__overlay">
+                <p>Discover the story behind each line of code.<br> Visit GitHub for the complete experience.</p>
+                <a href="https://github.com/CodeSolaris" class="portfolio__github-link border-effect" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+            <div class="portfolio__item">
+              <img src="img/example/example4.jpg" alt="example4" class="portfolio__work">
+              <div class="portfolio__overlay">
+                <p>Discover the story behind each line of code.<br> Visit GitHub for the complete experience.</p>
+                <a href="https://github.com/CodeSolaris" class="portfolio__github-link border-effect" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+            <div class="portfolio__item">
+              <img src="img/example/example5.jpg" alt="example5" class="portfolio__work">
+              <div class="portfolio__overlay">
+                <p>Discover the story behind each line of code.<br> Visit GitHub for the complete experience.</p>
+                <a href="https://github.com/CodeSolaris" class="portfolio__github-link border-effect" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+            <div class="portfolio__item">
+              <img src="img/example/example6.jpg" alt="example6" class="portfolio__work">
+              <div class="portfolio__overlay">
+                <p>Discover the story behind each line of code.<br> Visit GitHub for the complete experience.</p>
+                <a href="https://github.com/CodeSolaris" class="portfolio__github-link border-effect" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </div>
+            </div>
+            <div class=" portfolio__load-more">
+              <button class="portfolio__button button font-small border-effect">See more...</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience" class="add-info page__add-info">
+      <div class="container">
+        <div class="add-info__content">
+          <h2 class="add-info__title visually-hidden">Additional info</h2>
+          <div class="add-info__wrapper">
+            <article class="experience">
+              <h3 class="experience__title font-medium">Experience</h3>
+              <ul class="experience__list">
+                <li class="experience__item">
+                  <h4 class="experience__item-title font-small">Freelance Web Developer (2022 - Present)</h4>
+                  <ul class="experience__details">
+                    <li>Improved and optimized website performance by implementing best practices in HTML, CSS, and
+                      JavaScript.</li>
+                    <li>Streamlined integration of templates and plugins to enhance website functionality and user
+                      experience.</li>
+                    <li>Strengthened collaboration with clients by actively seeking feedback and maintaining clear
+                      communication
+                      throughout the project lifecycle.</li>
+                  </ul>
+                </li>
+                <li class="experience__item">
+                  <h4 class="experience__item-title font-small">Assembly Foreman (2006 - 2022)</h4>
+                  <ul class="experience__details">
+                    <li>Managed a team responsible for assembling ship hulls at Rotterdam Shipyard, Rotterdam,
+                      Netherlands;
+                      Bremerhaven Shipbuilding, Bremerhaven, Germany; and Amsterdam Marine Works, Amsterdam,
+                      Netherlands.</li>
+                    <li>Organized work and ensured timely completion of projects.</li>
+                    <li>Trained personnel and maintained quality standards.</li>
+                    <li>Adhered to quality and safety standards.</li>
+                    <li>Collaborated with team members and other departments across different shipyards.</li>
+                  </ul>
+                </li>
+              </ul>
+            </article>
+            <article class="education">
+              <h3 class="education__title font-medium">Education</h3>
+              <ul class="education__list">
+                <li class="education__item">
+                  <h4 class="education__item-title font-small">Education Degree:</h4>
+                  <p class="education__degree">Bachelor's Degree in Mykolaiv National Agrarian University, Ukraine</p>
+                </li>
+                <li class="education__item">
+                  <p class="education__courses-title font-small">Courses and Certifications:</p>
+                  <ul class="education__courses">
+                    <li class="education__courses-category">
+                      <p class="category__title">udemy:</p>
+                      <ul class="category__list">
+                        <li class="category__item">The Complete 2023 Web Development Bootcamp</li>
+                        <li class="category__item">The Complete Front-End Web Development Course</li>
+                      </ul>
+                    </li>
+                    <li class="education__courses-category">
+                      <p class="category__title">rs school:</p>
+                      <ul class="category__list">
+                        <li class="category__item">JavaScript/Front-end. Stage 0</li>
+                        <li class="category__item">JavaScript/Front-end. Stage 1</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </article>
+          </div>
+          <article class="languages add-info__languages">
+            <h3 class="languages__title font-medium">Languages:</h3>
+            <ul class="languages__description font-small">
+              <li>English: Fluent (IELTS 7.5)</li>
+              <li>Russian: Native</li>
+              <li>Ukrainian: Native</li>
+            </ul>
+
+          </article>
+          <article class="code-example add-info__code-example">
+            <h3 class="code-example__title font-medium">Code example:</h3>
+            <div class="code__task">
+              <pre>
+In this kata you have to write a simple Morse code decoder. While the Morse code is now mostly superseded
+by voice and digital data communication channels, it still has its use in some applications around the world.
+The Morse code encodes every character as a sequence of "dots" and "dashes". For example, the letter A is
+coded as ·−, letter Q is coded as −−·−, and digit 1 is coded as ·−−−−. The Morse code is case-insensitive
+traditionally capital letters are used. When the message is written in Morse code, a single space is used to
+separate the character codes and 3 spaces are used to separate words. For example, the message HEY JUDE in
+Morse code is ···· · −·−− ·−−− ··− −·· ·.
+NOTE: Extra spaces before or after the code have no meaning and should be ignored.
+In addition to letters, digits and some punctuation, there are some special service codes, the most notorious
+of those is the international distress signal SOS (that was first issued by Titanic), that is coded
+as ···−−−···. These special codes are treated as single special characters, and usually are transmitted as
+separate words. Your task is to implement a function that would take the morse code as input and return a
+decoded human-readable string.
+              </pre>
+            </div>
+            <pre>
+                  <code>
+                function decodeMorse(morseCode){
+                    const WORD_SEPARATOR = ' ';
+                    const LETTER_SEPARATOR = ' ';
+
+                    let morseWords = morseCode.split(WORD_SEPARATOR);
+                    let decodedMessage = morseWords.map(decodeWord).join(' ').trim();
+
+                    return decodedMessage;
+
+                    function decodeWord(word) {
+                        let morseLetters = word.split(LETTER_SEPARATOR);
+                        return morseLetters.map(decodeLetter).join('');
+                    }
+
+                    function decodeLetter(letter) {
+                        return MORSE_CODE[letter] || '';
+                    }
+                }
+                  </code>
+                </pre>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer footer">
+    <div class="container">
+      <article id="contact" class="footer__contact-me contact-me">
+        <h3 class="contact-me__title font-medium">Feel free to contact me:</h3>
+        <div class="contact-me__description">
+          <ul class="menu__social social">
+            <li class="social__item">
+              <a href="https://github.com/CodeSolaris" class="social__link" target="_blank" rel="noopener noreferrer">
+                <img src="img/social/github.png" width="24" alt="github" class="social__icon">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.linkedin.com/in/codesolaris/" class="social__link" target="_blank"
+                rel="noopener noreferrer">
+                <img src="img/social/linkedin.png" width="24" alt="linkedin" class="social__icon">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="mailto:volkov.aleksandr.it@gmail.com" class="social__link" target="_blank"
+                rel="noopener noreferrer">
+                <img src="img/social/gmail.png" width="24" alt="gmail" class="social__icon">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://t.me/CodeSolaris" class="social__link" target="_blank" rel="noopener noreferrer">
+                <img src="img/social/telegram.png" width="24" alt="telegram" class="social__icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <div class="footer__bottom">
+        <div class="footer__logo rsschool-logo">
+          <a href="https://rs.school/courses/javascript-ru" class="rsschool-logo__link" target="_blank"
+            rel="noopener noreferrer">
+            <img class="rsscool-logo__image" src="img/social/logo-rsschool3.png" alt="rsschool">
+          </a>
+        </div>
+        <p class="footer__text">© 2024 All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
