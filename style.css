@@ -359,3 +359,66 @@ margin-bottom: 50px;
     margin-bottom: 100px;
     max-width: 400px;
 }
+
+.portfolio {
+padding-top: 100px 20px 20px;
+}
+
+.portfolio__content {
+    padding-top: 50px;
+    background-image: url("img/background/fontext.jpg");
+}
+.portfolio__title, .portfolio__description {
+    text-align: center;
+}
+
+.portfolio__gallery {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+
+.portfolio__item {
+    height: 100%;
+}
+
+.portfolio__work {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.portfolio__item:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio__item:hover img {
+    filter: brightness(50%);
+}
+
+.portfolio__item:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.portfolio__item:hover::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+}
