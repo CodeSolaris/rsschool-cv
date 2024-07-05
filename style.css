@@ -10,18 +10,18 @@
     --font-main: 'DM Sans', sans-serif;
     --font-accent: 'Marcellus', serif;
     --gradient-main: linear-gradient(45deg,
-    #F72585,
-    #B5179E,
-    #7209B7,
-    #560BAD,
-    #480CA8,
-    #3A0CA3,
-    #3F37C9,
-    #3F37C9,
-    #3F37C9,
-    #3F37C9);
+            #F72585,
+            #B5179E,
+            #7209B7,
+            #560BAD,
+            #480CA8,
+            #3A0CA3,
+            #3F37C9,
+            #3F37C9,
+            #3F37C9,
+            #3F37C9);
     --background-color: #0f1f39b6;
-    --color-active:#24daee;
+    --color-active: #24daee;
 }
 
 * {
@@ -137,13 +137,14 @@ body,
 }
 
 .container {
+    height: 100%;
     margin: 0 auto;
     padding: var(--container-padding);
     max-width: var(--container-width);
 }
 
 .border-effect {
-  position: relative;
+    position: relative;
 }
 
 .border-effect::before {
@@ -223,7 +224,7 @@ body,
     gap: 20px;
 }
 
-.menu__link{
+.menu__link {
     color: var(--text-main-color);
     border-bottom: var(--text-main-color) 2px solid;
 }
@@ -266,7 +267,7 @@ body,
 .page__footer {
     margin-top: auto;
     padding: 60px 0;
-    background-color: #e3e3e3;
+    background-color: #100e0e;
     text-align: center;
 }
 
@@ -327,4 +328,34 @@ body,
     border: var(--main-color) 2px solid;
     z-index: 1;
 
+}
+
+.about__content {
+    margin: 50px 0;
+}
+
+
+
+.about__content {
+    background: url(img/background/portfolio-colored.jpg) center/cover no-repeat;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+}
+
+.about__title{
+margin-top: 50px;
+margin-left: 50px;
+margin-bottom: 50px;
+}
+.about__description{
+    background-color: var(--background-color);
+    border: var(--main-color) solid 2px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    max-width: 400px;
 }
