@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
+
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="page">
   <div class="video-background">
     <video autoplay loop muted playsinline>
@@ -64,7 +66,7 @@
           <div class="hero__subtitle font-medium">
             <h2>Front-end developer</h2>
           </div>
-          <button class="hero__button button font-small border-effect">Contact me</button>
+          <a href="#contact" class="hero__button button font-small border-effect">Contact me</a>
         </div>
       </div>
     </section>
@@ -116,42 +118,48 @@
               <img src="img/example/example1.jpg" alt="example1" class="portfolio__work">
               <div class="portfolio__overlay">
                 <p>Discover the story behind each line of code. <br>Visit GitHub for the complete experience.</p>
-                <a href="https://github.com/CodeSolaris" class="portfolio__github-link border-effect" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/CodeSolaris" class="portfolio__github-link border-effect" target="_blank"
+                  rel="noopener noreferrer">GitHub</a>
               </div>
             </div>
             <div class="portfolio__item">
               <img src="img/example/example2.jpg" alt="example2" class="portfolio__work">
               <div class="portfolio__overlay">
                 <p>Discover the story behind each line of code.<br> Visit GitHub for the complete experience.</p>
-                <a href="https://github.com/CodeSolaris" class="portfolio__github-link border-effect" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/CodeSolaris" class="portfolio__github-link border-effect" target="_blank"
+                  rel="noopener noreferrer">GitHub</a>
               </div>
             </div>
             <div class="portfolio__item">
               <img src="img/example/example3.jpg" alt="example3" class="portfolio__work">
               <div class="portfolio__overlay">
                 <p>Discover the story behind each line of code.<br> Visit GitHub for the complete experience.</p>
-                <a href="https://github.com/CodeSolaris" class="portfolio__github-link border-effect" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/CodeSolaris" class="portfolio__github-link border-effect" target="_blank"
+                  rel="noopener noreferrer">GitHub</a>
               </div>
             </div>
             <div class="portfolio__item">
               <img src="img/example/example4.jpg" alt="example4" class="portfolio__work">
               <div class="portfolio__overlay">
                 <p>Discover the story behind each line of code.<br> Visit GitHub for the complete experience.</p>
-                <a href="https://github.com/CodeSolaris" class="portfolio__github-link border-effect" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/CodeSolaris" class="portfolio__github-link border-effect" target="_blank"
+                  rel="noopener noreferrer">GitHub</a>
               </div>
             </div>
             <div class="portfolio__item">
               <img src="img/example/example5.jpg" alt="example5" class="portfolio__work">
               <div class="portfolio__overlay">
                 <p>Discover the story behind each line of code.<br> Visit GitHub for the complete experience.</p>
-                <a href="https://github.com/CodeSolaris" class="portfolio__github-link border-effect" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/CodeSolaris" class="portfolio__github-link border-effect" target="_blank"
+                  rel="noopener noreferrer">GitHub</a>
               </div>
             </div>
             <div class="portfolio__item">
               <img src="img/example/example6.jpg" alt="example6" class="portfolio__work">
               <div class="portfolio__overlay">
                 <p>Discover the story behind each line of code.<br> Visit GitHub for the complete experience.</p>
-                <a href="https://github.com/CodeSolaris" class="portfolio__github-link border-effect" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/CodeSolaris" class="portfolio__github-link border-effect" target="_blank"
+                  rel="noopener noreferrer">GitHub</a>
               </div>
             </div>
             <div class=" portfolio__load-more">
@@ -237,42 +245,45 @@
           <article class="code-example add-info__code-example">
             <h3 class="code-example__title font-medium">Code example:</h3>
             <div class="code__task">
-              <pre>
-In this kata you have to write a simple Morse code decoder. While the Morse code is now mostly superseded
-by voice and digital data communication channels, it still has its use in some applications around the world.
-The Morse code encodes every character as a sequence of "dots" and "dashes". For example, the letter A is
-coded as ·−, letter Q is coded as −−·−, and digit 1 is coded as ·−−−−. The Morse code is case-insensitive
-traditionally capital letters are used. When the message is written in Morse code, a single space is used to
-separate the character codes and 3 spaces are used to separate words. For example, the message HEY JUDE in
-Morse code is ···· · −·−− ·−−− ··− −·· ·.
-NOTE: Extra spaces before or after the code have no meaning and should be ignored.
-In addition to letters, digits and some punctuation, there are some special service codes, the most notorious
-of those is the international distress signal SOS (that was first issued by Titanic), that is coded
-as ···−−−···. These special codes are treated as single special characters, and usually are transmitted as
-separate words. Your task is to implement a function that would take the morse code as input and return a
-decoded human-readable string.
-              </pre>
+
+              In this kata you have to write a simple Morse code decoder. While the Morse code is now mostly superseded
+              by voice and digital data communication channels, it still has its use in some applications around the
+              world.
+              The Morse code encodes every character as a sequence of "dots" and "dashes". For example, the letter A is
+              coded as ·−, letter Q is coded as −−·−, and digit 1 is coded as ·−−−−. The Morse code is case-insensitive
+              traditionally capital letters are used. When the message is written in Morse code, a single space is used
+              to
+              separate the character codes and 3 spaces are used to separate words. For example, the message HEY JUDE in
+              Morse code is ···· · −·−− ·−−− ··− −·· ·.
+              NOTE: Extra spaces before or after the code have no meaning and should be ignored.
+              In addition to letters, digits and some punctuation, there are some special service codes, the most
+              notorious
+              of those is the international distress signal SOS (that was first issued by Titanic), that is coded
+              as ···−−−···. These special codes are treated as single special characters, and usually are transmitted as
+              separate words. Your task is to implement a function that would take the morse code as input and return a
+              decoded human-readable string.
+
             </div>
             <pre>
                   <code>
-                function decodeMorse(morseCode){
-                    const WORD_SEPARATOR = ' ';
-                    const LETTER_SEPARATOR = ' ';
+    function decodeMorse(morseCode){
+        const WORD_SEPARATOR = ' ';
+        const LETTER_SEPARATOR = ' ';
 
-                    let morseWords = morseCode.split(WORD_SEPARATOR);
-                    let decodedMessage = morseWords.map(decodeWord).join(' ').trim();
+        let morseWords = morseCode.split(WORD_SEPARATOR);
+        let decodedMessage = morseWords.map(decodeWord).join(' ').trim();
 
-                    return decodedMessage;
+        return decodedMessage;
 
-                    function decodeWord(word) {
-                        let morseLetters = word.split(LETTER_SEPARATOR);
-                        return morseLetters.map(decodeLetter).join('');
-                    }
+        function decodeWord(word) {
+            let morseLetters = word.split(LETTER_SEPARATOR);
+            return morseLetters.map(decodeLetter).join('');
+        }
 
-                    function decodeLetter(letter) {
-                        return MORSE_CODE[letter] || '';
-                    }
-                }
+        function decodeLetter(letter) {
+            return MORSE_CODE[letter] || '';
+        }
+    }
                   </code>
                 </pre>
           </article>
@@ -324,4 +335,5 @@ decoded human-readable string.
   </footer>
   <script src="script.js"></script>
 </body>
+
 </html>

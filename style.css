@@ -353,6 +353,7 @@ z-index: 1000;
 
 .hero__button {
     background-color: var(--background-color);
+    color: var(--text-main-color);
     border: var(--main-color) 2px solid;
     z-index: 1;
 
@@ -623,7 +624,7 @@ margin-bottom: 50px;
 }
 
 .code__task {
-    text-align: center;
+    padding: 30px;
 }
 .page__footer {
     margin-top: auto;
