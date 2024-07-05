@@ -83,10 +83,12 @@ button,
 input[type="submit"] {
     cursor: pointer;
 }
+html {
+    height: 100%;
+}
 
-html,
-body,
-.page {
+body
+{
     height: 100%;
     width: 100%;
     display: flex;
@@ -94,7 +96,18 @@ body,
     overflow-x: hidden;
 }
 
-
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 .page {
     font-family: var(--font-main);
@@ -123,23 +136,30 @@ body,
     font-size: 26px;
 }
 
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -100;
+}
+
 .video-background video {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    z-index: -100;
 }
 
 .container {
     height: 100%;
     margin: 0 auto;
-    padding: var(--container-padding);
+    padding: 0 var(--container-padding);
     max-width: var(--container-width);
 }
 
@@ -205,6 +225,17 @@ body,
         background-position: 0 0;
     }
 }
+.page__header, .page__footer {
+    background: url(img/background/darkspace.png);
+}
+
+.page__header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+z-index: 1000;
+}
 
 .header__navigation {
     display: flex;
@@ -213,6 +244,7 @@ body,
 }
 
 .navigation__menu {
+    padding: 30px;
     display: flex;
     justify-content: space-between;
     background-color: transparent;
@@ -264,18 +296,12 @@ body,
     transform: rotate(-15deg);
 }
 
-.page__footer {
-    margin-top: auto;
-    padding: 60px 0;
-    background-color: #100e0e;
-    text-align: center;
-}
 
 
-.hero__container {
-    width: 100%;
-    padding-top: 0;
+.page__hero {
+    margin-bottom: 100px;
 }
+
 
 .hero__content {
     width: 100%;
@@ -320,7 +346,6 @@ body,
     align-self: center;
     padding: 10px 20px;
     border-radius: 15px;
-    /* background-color: #1e1c1c1b; */
 }
 
 .hero__button {
@@ -329,11 +354,13 @@ body,
     z-index: 1;
 
 }
-
-.about__content {
-    margin: 50px 0;
+.about {
+    height: 600px;
 }
 
+.page__about {
+    margin-bottom: 100px;
+}
 
 
 .about__content {
@@ -341,7 +368,6 @@ body,
     height: 100%;
     display: flex;
     flex-direction: column;
-
     padding: 20px;
 }
 
@@ -350,31 +376,42 @@ margin-top: 50px;
 margin-left: 50px;
 margin-bottom: 50px;
 }
+
 .about__description{
     background-color: var(--background-color);
     border: var(--main-color) solid 2px;
     border-radius: 20px;
-    padding: 10px;
+    padding: 20px;
     margin-left: 50px;
     margin-bottom: 100px;
-    max-width: 400px;
+    max-width: 600px;
+}
+
+.page__skills {
+    margin-bottom: 100px;
 }
 
 .skills__title {
     text-align: center;
-    margin: 0 auto 30px;
+    padding: 30px 0;
     font-size: 3rem;
 
 }
 
 .skills__content {
+    height: 100%;
     background: url("img/background/peakpx.jpg") center/cover no-repeat;
 }
-
+.skills__gallery{
+    padding-bottom: 50px;
+}
 .gallery {
+    height: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     row-gap: 30px;
+    column-gap: 20px;
+    justify-items: center;
     max-width: 100%;
 }
 
@@ -393,8 +430,13 @@ margin-bottom: 50px;
     transform: scale(1.2);
     z-index: 1;
 }
+
+.page__porfolio{
+    margin-bottom: 100px;
+}
+
 .portfolio {
-padding-top: 100px 20px 20px;
+    padding-top: 100px 50px 50px;
 }
 
 .portfolio__content {
@@ -454,4 +496,75 @@ padding-top: 100px 20px 20px;
     width: 30px;
     height: 30px;
     background-color: #fff;
+}
+
+.add-info__content {
+    background: url("img/background/hacker.jpg");
+    height: 100%;
+}
+.add-info__wrapper{
+    display: flex;
+}
+.expirience {
+    width: 50%;
+    margin-right: auto;
+    padding: 20px;
+}
+.education{
+    width: 50%;
+    margin-left: auto;
+    padding: 20px;
+}
+.add-info__wrapper {
+    padding: 50px;
+}
+.expirience__title, .education__title {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.languages__title {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.languages__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.code-example__title {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.code__task {
+    padding: 10px ;
+}
+.page__footer {
+    margin-top: auto;
+    padding: 30px 0;
+}
+
+.footer__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    border-top: 1px solid var(--text-main-color);
+    margin: 0 auto;
+
+}
+.footer__contact-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+.rsscool-logo__image {
+    max-height: 50px;
+    padding: 10px;
+    background-color: var(--text-main-color)
 }
